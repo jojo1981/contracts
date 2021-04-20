@@ -1,0 +1,32 @@
+{
+  "name": "jojo1981/contracts",
+  "description": "Contracts library for shared interfaces across multiple libraries.",
+  "keywords": [
+    "contracts",
+    "contract",
+    "interface",
+    "interfaces"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "readme": "README.md",
+  "authors": [
+    {
+      "name": "Joost Nijhuis",
+      "email": "jnijhuis81@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": "^7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Jojo1981\\Contracts\\": "src/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
