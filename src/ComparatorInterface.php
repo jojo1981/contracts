@@ -11,7 +11,7 @@ namespace Jojo1981\Contracts;
 
 /**
  * @package Jojo1981\Contracts
- * @template T
+ * @template T of object
  */
 interface ComparatorInterface
 {
