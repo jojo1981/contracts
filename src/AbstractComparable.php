@@ -20,7 +20,7 @@ abstract class AbstractComparable implements ComparableInterface
      * @param T $object
      * @return bool
      */
-    public function isLowerThan($object): bool
+    public function isLowerThan(ComparableInterface $object): bool
     {
         return $this->compareTo($object) < 0;
     }
@@ -29,7 +29,7 @@ abstract class AbstractComparable implements ComparableInterface
      * @param T $object
      * @return bool
      */
-    public function isLowerThanOrEqualTo($object): bool
+    public function isLowerThanOrEqualTo(ComparableInterface $object): bool
     {
         return $this->compareTo($object) <= 0;
     }
@@ -38,7 +38,7 @@ abstract class AbstractComparable implements ComparableInterface
      * @param T $object
      * @return bool
      */
-    public function isEqual($object): bool
+    public function isEqual(ComparableInterface $object): bool
     {
         return 0 === $this->compareTo($object);
     }
@@ -47,7 +47,7 @@ abstract class AbstractComparable implements ComparableInterface
      * @param T $object
      * @return bool
      */
-    public function isHigherThanOrEqualTo($object): bool
+    public function isHigherThanOrEqualTo(ComparableInterface $object): bool
     {
         return $this->compareTo($object) >= 0;
     }
@@ -56,7 +56,7 @@ abstract class AbstractComparable implements ComparableInterface
      * @param T $object
      * @return bool
      */
-    public function isHigherThan($object): bool
+    public function isHigherThan(ComparableInterface $object): bool
     {
         return $this->compareTo($object) > 0;
     }
@@ -65,7 +65,7 @@ abstract class AbstractComparable implements ComparableInterface
      * @param T $object
      * @return bool
      */
-    public function isNotEqual($object): bool
+    public function isNotEqual(ComparableInterface $object): bool
     {
         return !$this->isEqual($object);
     }

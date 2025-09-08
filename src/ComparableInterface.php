@@ -11,7 +11,7 @@ namespace Jojo1981\Contracts;
 
 /**
  * This interface describes a comparable object.
- * 
+ *
  * @package Jojo1981\Contracts
  * @template T of ComparableInterface
  */
@@ -23,7 +23,7 @@ interface ComparableInterface
      * @param T $object
      * @return int
      */
-    public function compareTo($object): int;
+    public function compareTo(ComparableInterface $object): int;
 
     /**
      * Return true when $this is lower than $object
@@ -31,7 +31,7 @@ interface ComparableInterface
      * @param T $object
      * @return bool
      */
-    public function isLowerThan($object): bool;
+    public function isLowerThan(ComparableInterface $object): bool;
 
     /**
      * Return true when $this is lower than or equal to $object
@@ -39,7 +39,7 @@ interface ComparableInterface
      * @param T $object
      * @return bool
      */
-    public function isLowerThanOrEqualTo($object): bool;
+    public function isLowerThanOrEqualTo(ComparableInterface $object): bool;
 
     /**
      * Return true when $this and $object are equal
@@ -47,7 +47,7 @@ interface ComparableInterface
      * @param T $object
      * @return bool
      */
-    public function isEqual($object): bool;
+    public function isEqual(ComparableInterface $object): bool;
 
     /**
      * Return true when $this is higher than or equals to $object
@@ -55,7 +55,7 @@ interface ComparableInterface
      * @param T $object
      * @return bool
      */
-    public function isHigherThanOrEqualTo($object): bool;
+    public function isHigherThanOrEqualTo(ComparableInterface $object): bool;
 
     /**
      * Return true when $this is higher than $object
@@ -63,7 +63,7 @@ interface ComparableInterface
      * @param T $object
      * @return bool
      */
-    public function isHigherThan($object): bool;
+    public function isHigherThan(ComparableInterface $object): bool;
 
     /**
      * Return true when $this and $object are not equal
@@ -71,5 +71,5 @@ interface ComparableInterface
      * @param T $object
      * @return bool
      */
-    public function isNotEqual($object): bool;
+    public function isNotEqual(ComparableInterface $object): bool;
 }
