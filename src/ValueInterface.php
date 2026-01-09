@@ -12,23 +12,24 @@ namespace Jojo1981\Contracts;
 use Jojo1981\Contracts\Exception\ValueExceptionInterface;
 
 /**
+ * @template T of int|float|string
  * @package Jojo1981\Contracts
  */
 interface ValueInterface
 {
     /**
-     * @param int|float|string $value
+     * @param T $value
      * @throws ValueExceptionInterface
      */
     public function __construct($value);
 
     /**
-     * @return int|float|string
+     * @return T
      */
     public function getValue();
 
     /**
-     * @param ValueInterface $otherValue
+     * @param ValueInterface<T> $otherValue
      * @return bool
      */
     public function match(ValueInterface $otherValue): bool;
